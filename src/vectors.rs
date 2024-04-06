@@ -8,6 +8,7 @@ pub fn run() {
     // Re-Assign Value
     numbers[2] = 20;
     println!("change 3 to 20: {:?}", numbers);
+    numbers[2] = 3;
 
     // Add on to vector
     numbers.push(5);
@@ -31,5 +32,14 @@ pub fn run() {
     let slice: &[i32] = &numbers[0..3];
     println!("Slice: {:?}", slice);
 
+    // Loop through vector values
+    for x in numbers.iter() {
+        println!("Number: {}", x);
+    }
+
+    // loop & mutate values
+    for x in numbers.iter_mut() {
+        *x *= 2;
+    }
     println!("{:?}", numbers);
 }
