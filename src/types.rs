@@ -32,5 +32,12 @@ pub fn run() {
     // Get boolean from expression
     let is_greater: bool = 10 > 5;
 
-    println!("{:?}", (x, y, g, is_active, not_is_active, is_greater))
+    // Character
+    let a1 = 'a';
+    let face = '\u{1F600}';
+
+    println!(
+        "{:?}",
+        (x, y, g, is_active, not_is_active, is_greater, a1, face)
+    )
 }
