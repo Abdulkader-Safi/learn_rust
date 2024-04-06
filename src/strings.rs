@@ -26,4 +26,19 @@ pub fn run() {
 
     // Replace
     println!("Replace: {}", hello.replace("World", "Abdulkader"));
+
+    // Loop through string by whitespace
+    for word in hello.split_whitespace() {
+        println!("{}", word);
+    }
+
+    // Create string with capacity
+    let mut s = String::with_capacity(10);
+    s.push('a');
+    s.push('b');
+
+    println!("{}", s);
+
+    assert_eq!(2, s.len());
+    assert_eq!(10, s.capacity());
 }
