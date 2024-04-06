@@ -11,5 +11,7 @@ pub fn run() {
         println!("Hi {}!, how are you?", name)
     } else if command == "status" {
         println!("Status {}", status)
+    } else {
+        println!("That is not a valid command")
     }
 }
